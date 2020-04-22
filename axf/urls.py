@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from user import api as user_api
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^axf/user/register', user_api.register),
 ]
