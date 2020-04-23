@@ -19,4 +19,5 @@ from user import api as user_api
 
 urlpatterns = [
     url(r'^axf/user/register', user_api.register),
+    url(r'^axf/user/login', user_api.login),
 ]

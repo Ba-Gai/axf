@@ -2,9 +2,10 @@ import json
 from axf import settings
 from django.http import HttpResponse
 
-def render_json(data=None, code=200):
+def render_json(data=None, code=200, msg='ok'):
     result = {
         'data': data,
+        'msg': msg,
         'code': code
     }
     # 如果在调试模式下
